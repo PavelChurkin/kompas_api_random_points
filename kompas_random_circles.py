@@ -165,7 +165,7 @@ def create_drawing_document(kompas_object, api5_module, constants,
     # For A4 portrait: direct=False; landscape=True means direct=True
     standart_sheet.direct = landscape
 
-    iDocument2D = kompas_object.Document2D()
+    iDocument2D = kompas_object.Document2D
     result = iDocument2D.ksCreateDocument(doc_param)
     if not result:
         raise RuntimeError("Failed to create drawing document in KOMPAS-3D.")
